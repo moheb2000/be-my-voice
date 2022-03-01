@@ -45,4 +45,9 @@ span {
   left: 0;
   transform: translate(0, -50%);
 }
+
+span:hover,
+span:focus {
+  cursor: pointer;
+}
 </style>
