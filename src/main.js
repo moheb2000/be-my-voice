@@ -4,5 +4,6 @@ import router from "./router";
 
 import "@/assets/css/reset.css";
 import "@/assets/css/global.css";
+import "./registerServiceWorker";
 
 createApp(App).use(router).mount("#app");
