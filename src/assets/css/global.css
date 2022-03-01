@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+*, *::before, *::after {box-sizing: inherit;}
+html {box-sizing: border-box;}
+
+:root {
+  --cl-dark-blue: hsl(218, 23%, 21%);
+  --cl-light-gray: hsl(0, 0%, 90%);
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-black: hsl(0, 0%, 0%);
+  --cl-medium-gray: hsl(0, 0%, 77%);
+  --cl-purple: hsl(263, 60%, 48%);
+  --cl-pale-purple: hsl(260, 100%, 62%);
+  --cl-red: hsl(5, 81%, 38%);
+  --cl-cyan: hsl(181, 49%, 36%);
+  --cl-red-gradient: linear-gradient(135deg, hsl(0, 100%, 62%), hsl(5, 81%, 38%));
+
+  --fs-default: 16px;
+
+  font: 400 var(--fs-default) 'Vazir';
+  direction: rtl;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+body {
+  line-height: 1.5rem;
+  margin-top: 6.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

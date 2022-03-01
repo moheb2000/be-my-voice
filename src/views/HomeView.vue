@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <TopAppBar
+    :isShowArrow="false"
+    :title="languages['fa'].homeViewTitle"
+    color="var(--cl-pale-purple)"
+  ></TopAppBar>
+  <HomeBox
+    v-for="homeBox in homeBoxList"
+    :key="homeBox.id"
+    :text="homeBox.text"
+    :img="homeBox.img"
+    :alt="homeBox.alt"
+    :color="homeBox.color"
+    :link="homeBox.link"
+  ></HomeBox>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import TopAppBar from "@/components/TopAppBar.vue";
+import HomeBox from "@/components/HomeBox.vue";
+import data from "@/data/data";
+import languages from "@/data/languages";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    TopAppBar,
+    HomeBox,
+  },
+  data: () => {
+    return {
+      homeBoxList: data.homeBox,
+      languages: languages,
+    };
   },
 };
 </script>
