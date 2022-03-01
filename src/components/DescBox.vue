@@ -20,5 +20,6 @@ export default {
 <style scoped>
 section {
   margin: 1rem 2.5rem;
+  text-align: right;
 }
 </style>

@@ -31,6 +31,7 @@ section {
 
 .text {
   padding: 1.2rem 1rem;
+  text-align: right;
 }
 
 .icon {

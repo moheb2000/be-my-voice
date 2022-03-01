@@ -18,5 +18,6 @@ section {
   background: var(--cl-light-gray);
   border-radius: 0.7rem;
   overflow: hidden;
+  text-align: right;
 }
 </style>
