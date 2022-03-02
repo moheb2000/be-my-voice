@@ -9,7 +9,7 @@ const colors = {
   cyan: "hsl(181, 49%, 36%)",
 };
 
-let l = localStorage.lang;
+let l = localStorage.lang ?? "fa";
 
 const data = {
   homeBox: [
