@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <p>{{ languages["fa"].formDesc }}</p>
+  <section :class="{ ltr: l === 'en' }">
+    <p>{{ languages[l].formDesc }}</p>
   </section>
 </template>
 
@@ -12,6 +12,7 @@ export default {
   data: () => {
     return {
       languages: languages,
+      l: localStorage.lang ?? "fa",
     };
   },
 };
@@ -21,5 +22,9 @@ export default {
 section {
   margin: 1rem 2.5rem;
   text-align: right;
+}
+
+.ltr {
+  text-align: left;
 }
 </style>

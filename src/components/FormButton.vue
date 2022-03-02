@@ -1,6 +1,6 @@
 <template>
   <router-link to="/"
-    ><section>{{ languages["fa"].formButton }}</section></router-link
+    ><section>{{ languages[l].formButton }}</section></router-link
   >
 </template>
 
@@ -11,6 +11,7 @@ export default {
   data: () => {
     return {
       languages: languages,
+      l: localStorage.lang ?? "fa",
     };
   },
 };

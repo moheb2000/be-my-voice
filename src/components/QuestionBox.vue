@@ -4,11 +4,16 @@
       <p>{{ title }}</p>
     </div>
     <div class="answers">
-      <div @click="colorAnswer(qId, 'yes')" :id="`yes${qId}`" class="no-check">
-        {{ languages["fa"].answerYes }}
+      <div
+        @click="colorAnswer(qId, 'yes')"
+        :id="`yes${qId}`"
+        class="no-check"
+        :class="{ 'order--ltr': l === 'en' }"
+      >
+        {{ languages[l].answerYes }}
       </div>
       <div @click="colorAnswer(qId, 'no')" :id="`no${qId}`" class="no-check">
-        {{ languages["fa"].answerNo }}
+        {{ languages[l].answerNo }}
       </div>
     </div>
   </section>
@@ -26,6 +31,7 @@ export default {
   data: () => {
     return {
       languages: languages,
+      l: localStorage.lang ?? "fa",
     };
   },
   methods: {
@@ -72,5 +78,9 @@ section {
   color: var(--cl-black);
   padding: 0.1rem 2rem;
   border-radius: 0.7rem;
+}
+
+.order--ltr {
+  order: -1;
 }
 </style>

@@ -9,37 +9,39 @@ const colors = {
   cyan: "hsl(181, 49%, 36%)",
 };
 
+let l = localStorage.lang;
+
 const data = {
   homeBox: [
     {
       id: "homeBox1",
       img: "form.png",
-      alt: languages["fa"].homeBoxForm,
-      text: languages["fa"].homeBoxForm,
+      alt: languages[l].homeBoxForm,
+      text: languages[l].homeBoxForm,
       color: colors.purple,
       link: "/form",
     },
     {
       id: "homeBox2",
       img: "security.png",
-      alt: languages["fa"].homeBoxSecurity,
-      text: languages["fa"].homeBoxSecurity,
+      alt: languages[l].homeBoxSecurity,
+      text: languages[l].homeBoxSecurity,
       color: colors.darkBlue,
       link: "/education/0",
     },
     {
       id: "homeBox3",
       img: "ambulance.png",
-      alt: languages["fa"].homeBoxAmbulance,
-      text: languages["fa"].homeBoxAmbulance,
+      alt: languages[l].homeBoxAmbulance,
+      text: languages[l].homeBoxAmbulance,
       color: colors.red,
       link: "/emergency",
     },
     {
       id: "homeBox4",
       img: "network.png",
-      alt: languages["fa"].homeBoxNetwork,
-      text: languages["fa"].homeBoxNetwork,
+      alt: languages[l].homeBoxNetwork,
+      text: languages[l].homeBoxNetwork,
       color: colors.cyan,
       link: "/smn",
     },
@@ -47,464 +49,464 @@ const data = {
   emergencyBoxes: [
     {
       id: "1",
-      text: languages["fa"].emergencyText1,
+      text: languages[l].emergencyText1,
     },
     {
       id: "2",
-      text: languages["fa"].emergencyText2,
+      text: languages[l].emergencyText2,
     },
     {
       id: "3",
-      text: languages["fa"].emergencyText3,
+      text: languages[l].emergencyText3,
     },
     {
       id: "4",
-      text: languages["fa"].emergencyText4,
+      text: languages[l].emergencyText4,
     },
   ],
   educationPages: [
     {
-      title: languages["fa"].educationTitle,
+      title: languages[l].educationTitle,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text1,
+          text: languages[l].text1,
           link: "1",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text2,
+          text: languages[l].text2,
           link: "6",
         },
         {
           id: "3",
           isText: false,
-          text: languages["fa"].text3,
+          text: languages[l].text3,
           link: "9",
         },
         {
           id: "4",
           isText: false,
-          text: languages["fa"].text4,
+          text: languages[l].text4,
           link: "11",
         },
         {
           id: "5",
           isText: false,
-          text: languages["fa"].text5,
+          text: languages[l].text5,
           link: "14",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle2,
+      title: languages[l].educationTitle2,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text6,
+          text: languages[l].text6,
           link: "1",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text7,
+          text: languages[l].text7,
           link: "1",
         },
         {
           id: "3",
           isText: false,
-          text: languages["fa"].text8,
+          text: languages[l].text8,
           link: "1",
         },
         {
           id: "4",
           isText: false,
-          text: languages["fa"].text9,
+          text: languages[l].text9,
           link: "2",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle3,
+      title: languages[l].educationTitle3,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text10,
+          text: languages[l].text10,
           link: "2",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text11,
+          text: languages[l].text11,
           link: "2",
         },
         {
           id: "3",
           isText: false,
-          text: languages["fa"].text12,
+          text: languages[l].text12,
           link: "2",
         },
         {
           id: "4",
           isText: false,
-          text: languages["fa"].text13,
+          text: languages[l].text13,
           link: "3",
         },
         {
           id: "5",
           isText: false,
-          text: languages["fa"].text14,
+          text: languages[l].text14,
           link: "4",
         },
         {
           id: "6",
           isText: false,
-          text: languages["fa"].text15,
+          text: languages[l].text15,
           link: "5",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle4,
+      title: languages[l].educationTitle4,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text16,
+          text: languages[l].text16,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle5,
+      title: languages[l].educationTitle5,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text17,
+          text: languages[l].text17,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle6,
+      title: languages[l].educationTitle6,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text18,
+          text: languages[l].text18,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle7,
+      title: languages[l].educationTitle7,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text19,
+          text: languages[l].text19,
           link: "7",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text20,
+          text: languages[l].text20,
           link: "8",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle8,
+      title: languages[l].educationTitle8,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text21,
+          text: languages[l].text21,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text22,
+          text: languages[l].text22,
         },
         {
           id: "3",
           isText: true,
-          text: languages["fa"].text23,
+          text: languages[l].text23,
         },
         {
           id: "4",
           isText: true,
-          text: languages["fa"].text24,
+          text: languages[l].text24,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle9,
+      title: languages[l].educationTitle9,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text25,
+          text: languages[l].text25,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text26,
+          text: languages[l].text26,
         },
         {
           id: "3",
           isText: true,
-          text: languages["fa"].text27,
+          text: languages[l].text27,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle10,
+      title: languages[l].educationTitle10,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text28,
+          text: languages[l].text28,
           link: "9",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text29,
+          text: languages[l].text29,
           link: "10",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle12,
+      title: languages[l].educationTitle12,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text35,
+          text: languages[l].text35,
           link: "11",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text36,
+          text: languages[l].text36,
           link: "13",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle13,
+      title: languages[l].educationTitle13,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text37,
+          text: languages[l].text37,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text38,
+          text: languages[l].text38,
         },
         {
           id: "3",
           isText: true,
-          text: languages["fa"].text39,
+          text: languages[l].text39,
         },
         {
           id: "4",
           isText: true,
-          text: languages["fa"].text40,
+          text: languages[l].text40,
         },
         {
           id: "5",
           isText: true,
-          text: languages["fa"].text41,
+          text: languages[l].text41,
         },
         {
           id: "6",
           isText: false,
-          text: languages["fa"].text42,
+          text: languages[l].text42,
           link: "12",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle14,
+      title: languages[l].educationTitle14,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text43,
+          text: languages[l].text43,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text44,
+          text: languages[l].text44,
         },
         {
           id: "3",
           isText: true,
-          text: languages["fa"].text45,
+          text: languages[l].text45,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle15,
+      title: languages[l].educationTitle15,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text46,
+          text: languages[l].text46,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text47,
+          text: languages[l].text47,
         },
         {
           id: "3",
           isText: true,
-          text: languages["fa"].text48,
+          text: languages[l].text48,
         },
         {
           id: "4",
           isText: true,
-          text: languages["fa"].text49,
+          text: languages[l].text49,
         },
         {
           id: "5",
           isText: true,
-          text: languages["fa"].text50,
+          text: languages[l].text50,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle16,
+      title: languages[l].educationTitle16,
       components: [
         {
           id: "1",
           isText: false,
-          text: languages["fa"].text51,
+          text: languages[l].text51,
           link: "15",
         },
         {
           id: "2",
           isText: false,
-          text: languages["fa"].text52,
+          text: languages[l].text52,
           link: "16",
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle17,
+      title: languages[l].educationTitle17,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text53,
+          text: languages[l].text53,
         },
         {
           id: "2",
           isText: true,
-          text: languages["fa"].text54,
+          text: languages[l].text54,
         },
       ],
     },
     {
-      title: languages["fa"].educationTitle18,
+      title: languages[l].educationTitle18,
       components: [
         {
           id: "1",
           isText: true,
-          text: languages["fa"].text55,
+          text: languages[l].text55,
         },
       ],
     },
   ],
   formPage: {
-    title: languages["fa"].formViewTitle,
+    title: languages[l].formViewTitle,
     questions: [
       {
         id: "1",
-        title: languages["fa"].question1,
+        title: languages[l].question1,
       },
       {
         id: "2",
-        title: languages["fa"].question2,
+        title: languages[l].question2,
       },
       {
         id: "3",
-        title: languages["fa"].question3,
+        title: languages[l].question3,
       },
       {
         id: "4",
-        title: languages["fa"].question4,
+        title: languages[l].question4,
       },
       {
         id: "5",
-        title: languages["fa"].question5,
+        title: languages[l].question5,
       },
       {
         id: "6",
-        title: languages["fa"].question6,
+        title: languages[l].question6,
       },
       {
         id: "7",
-        title: languages["fa"].question7,
+        title: languages[l].question7,
       },
       {
         id: "8",
-        title: languages["fa"].question8,
+        title: languages[l].question8,
       },
       {
         id: "9",
-        title: languages["fa"].question9,
+        title: languages[l].question9,
       },
       {
         id: "10",
-        title: languages["fa"].question10,
+        title: languages[l].question10,
       },
       {
         id: "11",
-        title: languages["fa"].question11,
+        title: languages[l].question11,
       },
       {
         id: "12",
-        title: languages["fa"].question12,
+        title: languages[l].question12,
       },
       {
         id: "13",
-        title: languages["fa"].question13,
+        title: languages[l].question13,
       },
       {
         id: "14",
-        title: languages["fa"].question14,
+        title: languages[l].question14,
       },
       {
         id: "15",
-        title: languages["fa"].question15,
+        title: languages[l].question15,
       },
       {
         id: "16",
-        title: languages["fa"].question16,
+        title: languages[l].question16,
       },
       {
         id: "17",
-        title: languages["fa"].question17,
+        title: languages[l].question17,
       },
       {
         id: "18",
-        title: languages["fa"].question18,
+        title: languages[l].question18,
       },
       {
         id: "19",
-        title: languages["fa"].question19,
+        title: languages[l].question19,
       },
       {
         id: "20",
-        title: languages["fa"].question20,
+        title: languages[l].question20,
       },
     ],
   }

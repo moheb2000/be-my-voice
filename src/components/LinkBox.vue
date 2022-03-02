@@ -1,9 +1,11 @@
 <template>
   <router-link :to="`/education/${link}`">
-    <section>
+    <section :class="{ ltr: l === 'en' }">
       <div class="text">{{ text }}</div>
       <div class="icon">
-        <span class="material-icons">arrow_back_ios</span>
+        <span class="material-icons">{{
+          l === "en" ? "arrow_forward_ios" : "arrow_back_ios"
+        }}</span>
       </div>
     </section>
   </router-link>
@@ -16,6 +18,11 @@ export default {
     text: String,
     link: String,
   },
+  data: () => {
+    return {
+      l: localStorage.lang ?? "fa",
+    };
+  },
 };
 </script>
 
@@ -27,11 +34,15 @@ section {
   background: var(--cl-light-gray);
   border-radius: 0.7rem;
   overflow: hidden;
+  text-align: right;
 }
 
 .text {
   padding: 1.2rem 1rem;
-  text-align: right;
+}
+
+.ltr {
+  text-align: left;
 }
 
 .icon {

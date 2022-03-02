@@ -1,5 +1,6 @@
 <template>
   <header :style="{ background: color }">
+    <slot></slot>
     <span @click="$router.back()" class="material-icons" v-if="isShowArrow"
       >arrow_back</span
     >

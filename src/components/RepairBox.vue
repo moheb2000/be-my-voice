@@ -3,7 +3,7 @@
     <div class="image">
       <img src="../assets/images/hammer.png" alt="repair hammer" />
     </div>
-    <p class="text">{{ languages["fa"].repairText }}</p>
+    <p class="text">{{ languages[l].repairText }}</p>
   </section>
 </template>
 
@@ -15,6 +15,7 @@ export default {
   data: () => {
     return {
       languages: languages,
+      l: localStorage.lang ?? "fa",
     };
   },
 };
