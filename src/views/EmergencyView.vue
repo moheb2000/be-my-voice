@@ -6,7 +6,7 @@
       color="var(--cl-red)"
     ></TopAppBar>
     <section v-for="box in emergencyBoxes" :key="box.id">
-      <EmergencyBox :text="box.text"></EmergencyBox>
+      <EmergencyBox :phone="box.phone" :text="box.text"></EmergencyBox>
     </section>
   </DirectionBox>
 </template>

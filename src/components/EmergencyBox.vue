@@ -1,5 +1,8 @@
 <template>
-  <section>{{ text }}</section>
+  <a v-if="phone" :href="`tel:${phone}`"
+    ><section>{{ text }}</section></a
+  >
+  <section v-else>{{ text }}</section>
 </template>
 
 <script>
@@ -7,6 +10,8 @@ export default {
   name: "EmergencyBox",
   props: {
     text: String,
+    phone: String,
+    link: String,
   },
 };
 </script>

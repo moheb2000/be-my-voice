@@ -50,10 +50,12 @@ const data = {
     {
       id: "1",
       text: languages[l].emergencyText1,
+      phone: "+123",
     },
     {
       id: "2",
       text: languages[l].emergencyText2,
+      phone: "+110",
     },
     {
       id: "3",
