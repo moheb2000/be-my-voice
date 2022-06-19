@@ -6,6 +6,7 @@
       color="var(--cl-pale-purple)"
       ><LangButton></LangButton
     ></TopAppBar>
+    <DemoAlarm></DemoAlarm>
     <HomeBox
       v-for="homeBox in homeBoxList"
       :key="homeBox.id"
@@ -24,6 +25,7 @@ import TopAppBar from "@/components/TopAppBar.vue";
 import HomeBox from "@/components/HomeBox.vue";
 import LangButton from "@/components/LangButton.vue";
 import DirectionBox from "@/components/DirectionBox.vue";
+import DemoAlarm from "@/components/DemoAlarm.vue";
 import data from "@/data/data";
 import languages from "@/data/languages";
 
@@ -34,6 +36,7 @@ export default {
     HomeBox,
     LangButton,
     DirectionBox,
+    DemoAlarm,
   },
   data: () => {
     return {
