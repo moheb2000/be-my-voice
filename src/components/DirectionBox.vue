@@ -9,7 +9,7 @@ export default {
   name: "DirectionBox",
   data: () => {
     return {
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
 };

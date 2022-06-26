@@ -20,7 +20,7 @@ export default {
   },
   data: () => {
     return {
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
 };

@@ -11,7 +11,12 @@
         supporting persons, are not working properly because of not connecting
         to the servers and mobile phone operators.
         <br />
+        برخی قابلیت های این نمونه‌ی اولیه، نظیر ارسال پیام کمک به حامی، به دلیل
+        عدم اتصال به سرور و اپراتورهای موبایل غیرفعال می باشد
+        <br />
         <em>(Touch the screen to continue)</em>
+        <br />
+        <em>(برای ادامه صفحه را لمس کنید)</em>
       </p>
     </section>
   </div>

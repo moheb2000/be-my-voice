@@ -42,7 +42,7 @@ export default {
     return {
       homeBoxList: data.homeBox,
       languages: languages,
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
 };

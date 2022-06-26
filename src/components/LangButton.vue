@@ -11,7 +11,7 @@ export default {
   name: "LangButton",
   data: () => {
     return {
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
   methods: {

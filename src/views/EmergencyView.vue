@@ -30,7 +30,7 @@ export default {
     return {
       languages: languages,
       emergencyBoxes: data.emergencyBoxes,
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
 };

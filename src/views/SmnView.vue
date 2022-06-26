@@ -26,7 +26,7 @@ export default {
   data: () => {
     return {
       languages: languages,
-      l: localStorage.lang ?? "fa",
+      l: localStorage.lang ?? "en",
     };
   },
 };
