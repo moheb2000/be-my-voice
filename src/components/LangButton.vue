@@ -1,9 +1,11 @@
 <template>
-  <span @click="changeLang()"
-    ><img
+  <span @click="changeLang()">
+    <img
       :src="require(`../assets/images/${l === 'fa' ? 'ir.svg' : 'gb.svg'}`)"
       :alt="l"
-  /></span>
+    />
+    <p>{{ langName }}</p></span
+  >
 </template>
 
 <script>
@@ -12,6 +14,7 @@ export default {
   data: () => {
     return {
       l: localStorage.lang ?? "en",
+      langName: localStorage.lang == "fa" ? "FA" : "ENG",
     };
   },
   methods: {
@@ -38,6 +41,9 @@ span {
   right: 0;
   transform: translate(0, -50%);
   width: 48px;
+  display: flex;
+  direction: rtl;
+  align-items: center;
 }
 
 span:hover,
@@ -47,5 +53,9 @@ span:focus {
 
 img {
   border-radius: 0.3rem;
+}
+
+p {
+  margin-right: 0.5rem;
 }
 </style>
