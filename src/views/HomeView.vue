@@ -7,6 +7,7 @@
       ><LangButton></LangButton
     ></TopAppBar>
     <DemoAlarm></DemoAlarm>
+    <AlarmButton></AlarmButton>
     <HomeBox
       v-for="homeBox in homeBoxList"
       :key="homeBox.id"
@@ -26,6 +27,7 @@ import HomeBox from "@/components/HomeBox.vue";
 import LangButton from "@/components/LangButton.vue";
 import DirectionBox from "@/components/DirectionBox.vue";
 import DemoAlarm from "@/components/DemoAlarm.vue";
+import AlarmButton from "@/components/AlarmButton.vue";
 import data from "@/data/data";
 import languages from "@/data/languages";
 
@@ -37,6 +39,7 @@ export default {
     LangButton,
     DirectionBox,
     DemoAlarm,
+    AlarmButton,
   },
   data: () => {
     return {

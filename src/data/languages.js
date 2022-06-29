@@ -112,6 +112,7 @@ const languages = {
     answerNo: "خیر",
     formButton: "ثبت و ارسال",
     formDesc: "این پرسشنامه بررسی می کند که آیا شما تحت خشونت خانگی قرار دارید یا نه. از پاسخگویی صادقانه شما ممنونم:",
+    alarmDesc: "توجه: این یک نسخه دمو است. برای اطلاعات بیشتر کلیک کنید."
   },
 
   en: {
@@ -225,6 +226,7 @@ const languages = {
     answerNo: "No",
     formButton: "Register and submit",
     formDesc: "This questionnaire examines whether you are a victim of domestic violence or not. Thank you for your honest answer:",
+    alarmDesc: "Notice: This is a demo version. Click for more information.",
   },
 };
 
